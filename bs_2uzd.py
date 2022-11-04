@@ -39,7 +39,7 @@ for i in answers:
 # uzuominos2
 def get_second_hint(i):
     r = requests.get(url + hrefs[i])
-    soup = BeautifulSoup(r.text, "html.parser").
+    soup = BeautifulSoup(r.text, "html.parser")
     text = soup.select('p')[1].get_text()
     return text
 
